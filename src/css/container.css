@@ -1,0 +1,140 @@
+/* Styles for Mobile devices */
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.form-container {
+  text-align: center;
+  margin-top: 36px;
+}
+
+input {
+  outline: 0;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+input:focus {
+  border: 1px solid #6c8cff;
+}
+/* .form-input:hover,
+.form-input:focus {
+  border: 1px solid #000;
+} */
+
+.searchBtn {
+  margin-left: 8px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+
+.searchBtn:hover,
+.searchBtn:focus {
+  background-color: #6c8cff;
+}
+
+.gallery {
+  max-width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 24px;
+  padding: 24px;
+}
+
+.gallery-card {
+  width: calc((100% - 2 * 24px) / 3);
+  min-width: 360px;
+  height: 300px;
+}
+
+.card-image {
+  display: block;
+  height: auto;
+  width: 100%;
+  cursor: zoom-in;
+  transition: transform 0.4s;
+  object-fit: contain;
+}
+
+.params {
+  display: flex;
+}
+
+.params-item {
+  display: flex;
+  justify-content: baseline;
+}
+
+.params-item-name {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: #ff3d00 transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
