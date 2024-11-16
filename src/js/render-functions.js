@@ -9,17 +9,16 @@ export default function renderFunction(arr) {
         views,
         comments,
         downloads,
-        previewWidth,
       }) => `<li class="gallery-card">
       <a class="card-link" href="${largeImageURL}">
-    <img class="card-image" src="${webformatURL}" alt="${tags}" width="${previewWidth}"/>
-    <div class="card-info">
-    <p class="params-item-value">Likes: ${likes}</p>
-    <p class="params-item-value">Views: ${views}</p>
-    <p class="params-item-value">Comments: ${comments}</p>
-    <p class="params-item-value">Downloads: ${downloads}</p>
-    </div>
+    <img class="card-image" src="${webformatURL}" alt="${tags}"/>
     </a>
+    <ul class="card-info">
+    <li class="params-item-value"><h2 class="textBold">Likes</h2> <p class="amount">${likes}</p></li>
+    <li class="params-item-value"><h2 class="textBold">Views</h2> <p class="amount">${views}</p></li>
+    <li class="params-item-value"><h2 class="textBold">Comments</h2> <p class="amount">${comments}</p></li>
+    <li class="params-item-value"><h2 class="textBold">Downloads</h2> <p class="amount">${downloads}</p></li>
+    </ul>
     </li> `
     )
     .join('');
