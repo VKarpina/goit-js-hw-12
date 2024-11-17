@@ -7,8 +7,6 @@ body {
   background: linear-gradient(to bottom right, #eae5c9, #6cc6cb);
 }
 
-/* linear-gradient(to bottom right, #344a4e, #3b92a3); */
-
 .container {
   min-width: 320px;
   max-width: 375px;
